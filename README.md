@@ -55,19 +55,66 @@ Each category has a dedicated deep-dive document:
 
 ## Roadmap
 
-### Phase 2 — Extended Coverage
-- [ ] Wearables: Wear OS → HUAWEI Wear Engine
-- [ ] Wallet: Google Pay → Huawei Pay
-- [ ] Cast: Chromecast SDK → Cast+ Connect
-- [ ] AR: ARCore → AR Engine
-- [ ] Speech: Google Speech-to-Text → ML Kit ASR
+> Phase 1 (20 services) is complete. Phases 2–5 below list all known remaining GMS→HMS mappings, organized by domain.
 
-### Phase 3 — Tooling
+### Phase 2 — Payments, Wearables & Device Ecosystem
+
+| GMS Service | HMS Equivalent |
+|-------------|----------------|
+| Google Pay | Huawei Pay |
+| Google Wallet Passes | Wallet Kit |
+| Wear OS | Wear Engine |
+| Chromecast SDK | Cast+ Connect |
+| Android Auto | HiCar |
+| Android TV | HUAWEI Vision (Smart Screen) |
+| Google Home / Smart Home | HiLink (Smart Home SDK) |
+| Google Play Instant Apps | Quick App |
+
+### Phase 3 — AR, Identity & Sensing
+
+| GMS Service | HMS Equivalent |
+|-------------|----------------|
+| ARCore | AR Engine |
+| Google Identity Services (One Tap Sign-In) | Huawei ID (QuickLogin) |
+| Google Smart Lock for Passwords | no direct HMS equivalent |
+| Activity Recognition API | Activity Identification (Location Kit) |
+| Geofencing API | Geofence (Location Kit) |
+| Awareness API | no direct HMS equivalent |
+| Wifi Aware (NAN) | no direct HMS equivalent |
+| Android Backup / Auto Backup | Device Backup (HMS Core) |
+
+### Phase 4 — Firebase Backend Services
+
+| GMS (Firebase) Service | HMS / AGC Equivalent |
+|------------------------|----------------------|
+| Firebase Authentication (email / phone / OAuth) | Auth Service (AppGallery Connect) |
+| Firebase Firestore | Cloud DB (AppGallery Connect) |
+| Firebase Realtime Database | Cloud DB (AppGallery Connect) |
+| Firebase A/B Testing | A/B Testing Kit (AppGallery Connect) |
+| Firebase In-App Messaging | In-App Messaging (AppGallery Connect) |
+| Firebase Performance Monitoring | APM Kit (AppGallery Connect) |
+| Firebase App Distribution | Distribution (AppGallery Connect) |
+| Firebase Test Lab | Cloud Debugging (AppGallery Connect) |
+| Firebase App Check | no direct HMS equivalent |
+| Google Tag Manager | no direct HMS equivalent |
+
+### Phase 5 — ML & Speech Expansion
+
+| GMS Service | HMS Equivalent |
+|-------------|----------------|
+| Google Speech-to-Text | ML Kit ASR |
+| Google Text-to-Speech | ML Kit TTS |
+| Google Cloud Vision API | ML Kit Image Classification / Object Detection |
+| Google Cloud Translation API | ML Kit Translation |
+| Google Cloud Natural Language API | ML Kit Natural Language Understanding |
+| Google Cloud Face Detection | ML Kit Face Detection |
+| Google Lens (on-device) | ML Kit Scene Detection |
+| Google Cloud Barcode Scanning | ML Kit Scan Kit |
+
+### Phase 6 — Tooling & Community
 - [ ] Automated dependency scanner to flag GMS usages in a project
 - [ ] Side-by-side API diff tables at the method level
 - [ ] Sample migration app demonstrating dual-stack (GMS + HMS) patterns
-
-### Phase 4 — Community
 - [ ] Verified migration case studies from production apps
 - [ ] Complexity scoring model based on surface-area analysis
 - [ ] Integration with Huawei DevEco toolchain
