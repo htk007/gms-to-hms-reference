@@ -14,7 +14,7 @@
 
 * **Gotcha / Key Difference:** Unlike SafetyNet Attestation — which returns a signed JWS blob verifiable with Google's public key — SysIntegrity returns a response verified against Huawei's TEE-backed key, requiring your backend to call Huawei's cloud verification API to validate the nonce and certificate chain.
 * **Migration Effort:** Medium
-* **Official Docs:** [https://developer.huawei.com/consumer/en/doc/](https://developer.huawei.com/consumer/en/doc/)
+* **Official Docs:** [SafetyNet](https://developers.google.com/android/reference/com/google/android/gms/safetynet/SafetyNet)  [Safety Detect (SysIntegrity)](https://developer.huawei.com/consumer/en/hms/huawei-safetydetectkit/)
 
 ---
 
