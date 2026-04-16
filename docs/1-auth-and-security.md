@@ -6,7 +6,8 @@
 
 * **Gotcha / Key Difference:** Huawei ID uses OAuth 2.0 / OpenID Connect but issues its own `idToken` signed by Huawei's authorization server, so any backend token verification must call Huawei's token introspection endpoint rather than Google's `tokeninfo` API.
 * **Migration Effort:** Easy
-* **Official Docs:** [Huawei ID](https://id1.cloud.huawei.com/AMW/portal/home.html)  [Google Sign-In]([https://id1.cloud.huawei.com/AMW/portal/home.html](https://support.google.com/accounts/answer/27441?hl=en&co=GENIE.Platform%3DAndroid))
+* **Official Docs:** [Huawei ID](https://id1.cloud.huawei.com/AMW/portal/home.html)
+* [Google Sign-In]([https://id1.cloud.huawei.com/AMW/portal/home.html](https://support.google.com/accounts/answer/27441?hl=en&co=GENIE.Platform%3DAndroid))
 
 ---
 
